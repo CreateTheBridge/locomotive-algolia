@@ -1,0 +1,52 @@
+{
+  "version": "0.1.0",
+  "tasks": [
+    {
+      "isShellCommand": true,
+      "taskName": "bundle install",
+      "command": "bundle",
+      "args": ["install"],
+      "suppressTaskName": true
+    },
+    {
+      "isShellCommand": true,
+      "command": "rake",
+      "taskName": "rake routes",
+      "args": ["routes"],
+      "suppressTaskName": true
+    },
+    {
+      "isShellCommand": true,
+      "command": "rake",
+      "taskName": "rake db:migrate",
+      "args": ["db:migrate"],
+      "suppressTaskName": true
+    },
+    {
+      "isShellCommand": true,
+      "command": "rake",
+      "taskName": "rake db:rollback",
+      "args": ["db:rollback"],
+      "suppressTaskName": true
+    },
+    {
+      "isShellCommand": true,
+      "command": "rake",
+      "taskName": "rake g migration",
+      "args": ["g migrate"],
+      "suppressTaskName": true
+    },
+    {
+      "isShellCommand": true,
+      "command": "ruby",
+      "taskName": "run test",
+      "args": ["-Itest", "${relativeFile}"]
+    },
+    {
+      "isShellCommand": true,
+      "command": "ruby",
+      "taskName": "ruby version",
+      "args": ["-v"]
+    }
+  ]
+}
